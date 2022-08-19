@@ -1,0 +1,29 @@
+nav{
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #121212;
+}
+
+h1{
+    font-size: 35px;
+    color: #7fffd4;
+    margin-left: 30px;
+}
+
+ul{
+    position: absolute;
+    right: 40px;    
+    width: 40%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;    
+}
+
+a{
+    text-decoration: none;
+    color: aqua;
+    font-family: 'Open Sans', sans-serif;
+}
