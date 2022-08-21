@@ -2,7 +2,7 @@ import React from 'react'
 
 const CartWidget = () => {
   return (
-  <span  className="material-symbols-outlined">
+  <span  className= "material-symbols-outlined">
   shopping_cart
   </span>
   )
