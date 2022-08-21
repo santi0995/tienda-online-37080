@@ -6,7 +6,7 @@ const Main = ({alumno}) => {
   return (
     <main >
       <section>
-      <h1 className={estilos.title1}>Bienvenido {alumno.nombre}</h1>
+      <h2 className={estilos.title1}>Bienvenido {alumno.nombre}</h2>
       </section>
     </main>
   );
