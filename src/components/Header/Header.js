@@ -1,10 +1,9 @@
 import Navbar from "../Nav/Navbar";
-import estilos from './header.module.css';
 
-const Header = () => {
+const Header = (props) => {
     return(
-        <header className={estilos.navbar}>
-            <Navbar />
+        <header>
+            <Navbar isFooter={false}/>  
         </header>
     )
 }

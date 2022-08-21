@@ -2,3 +2,8 @@
     background-color: blue;
     display: none;
   }
+
+  h5{
+    display: flex;
+    justify-content: center;
+  }

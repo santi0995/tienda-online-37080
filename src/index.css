@@ -3,11 +3,12 @@
   padding: 0;
 }
 
-.contenedor-main{
-  background-color: red;
-  display: none;
-}
-
 body{
   background-color: #000000;
+}
+
+.saludo{
+  color:aqua;
+  display: flex;
+  justify-content: flex-end;
 }
