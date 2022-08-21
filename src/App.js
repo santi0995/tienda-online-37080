@@ -4,10 +4,11 @@ import Main from "./components/Main/Main";
 import ItemListContainer from './components/ItemListContainer';
 
 function App() {
+  const saludo = 'Aquí van los items del carrito'
   return (
     <>
       <Header/>
-      <ItemListContainer saludo='Aquí van los items del carrito'/>
+      <ItemListContainer saludo={saludo}/>
       <Main test='Probando las propiedades'
             alumno = {{nombre: 'Santiago', curso: 'React'}}/>
       <Footer />

@@ -4,12 +4,11 @@
     display: flex;
     align-items: center;
     background-color: #121212;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
 .title{
     font-size: 35px;
-    position: absolute;
     left: 0;
     color: #7fffd4;
     margin-left: 30px;
@@ -28,12 +27,4 @@ a{
     text-decoration: none;
     color: aqua;
     font-family: 'Open Sans', sans-serif;
-}
-
-span{
-    color: #7fffd4;
-}
-
-.icon{
-    font-size: 3rem;
 }

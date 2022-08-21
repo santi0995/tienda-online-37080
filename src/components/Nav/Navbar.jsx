@@ -1,6 +1,6 @@
 import React from "react";
 import estilos from './navbar.module.css'
-import CartWidget from "./CartWidget";
+import {CartWidget} from "./CartWidget";
 
 const Navbar = (props) => {
   if (props.isFooter === false) {
