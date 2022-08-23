@@ -1,0 +1,11 @@
+.primary{
+    font-size: 26px;
+    padding: 5px;
+}
+
+.secondary{
+    font-size: 30px;
+    padding: 5px;
+    color: blue;
+    margin: 50px;
+}
