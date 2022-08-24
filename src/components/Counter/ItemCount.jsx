@@ -24,8 +24,8 @@ const ItemCount = ({stock, initial, onAdd}) => {
 
     return(
         <div className={estilos.countContainer}>
-        <p className={estilos.count} >{count}</p>
         <button className={estilos.button} onClick={sumar}>+</button>
+        <p className={estilos.count} >{count}</p>
         <button className={estilos.button} onClick={restar}>-</button>
         <button className={estilos.button2}onClick={onAdd}>Agregar al Carrito</button>
         </div>
