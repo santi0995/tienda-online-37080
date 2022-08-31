@@ -5,13 +5,12 @@ import { products } from '../../mock/products';
 
 const ItemListContainer = () => {
   
+
   const [items, setItems] = useState([]);
 
   useEffect(() => {
     const getProducts = new Promise ((res, rej) => {
-      setTimeout(() => {
-        res(products);
-      }, 2000);
+      setTimeout(() => res(products), 2000);
     });
 
     getProducts
@@ -19,7 +18,7 @@ const ItemListContainer = () => {
       setItems(products);
     })
     .catch((error) => {
-      // console.log(error);
+      // console.error(error);
     })
     .finally(() => {
       // console.log("Finally");

@@ -4,6 +4,9 @@ import estilos from './item.module.css'
 
 const Item = ({item}) => {
 
+    const onAdd = (param) => {
+        console.log(param); 
+};
 
 return (
     <div className={estilos.container}>
@@ -13,11 +16,11 @@ return (
             <p className={estilos.span} >${item.price}</p>
             <p>Categoria: {item.category}</p>
             <button className={estilos.button}>Ver detalle del producto</button>
-            <p>Stock Disponible {item.stock}</p>
-            <ItemCount stock={10} initial={1}/>
+            <p>Stock Disponible: {item.stock}</p>
+            <ItemCount stock={10} initial={1} onAdd={onAdd}/>
         </div>
     </div>
 )
 }
 
-export default Item
+export default Item;

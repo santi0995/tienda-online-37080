@@ -1,3 +1,4 @@
+import ItemDetailContainer from '../ItemDetailContainer/ItemDetailContainer';
 // import Button from '../Button/Button';
 import ItemListContainer from '../ItemListContainer/ItemListContainer';
 import React from 'react'
@@ -10,6 +11,7 @@ const Main = () => {
       <section>
         <img className={estilos.banner} src='bannerP.jpg' alt=""/>
         <ItemListContainer/>
+        <ItemDetailContainer/>
       </section>
     </main>
   );

@@ -1,0 +1,29 @@
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    padding: 2rem;
+    color: #ffffff;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    margin: 5rem;
+    float: right;
+}
+
+p{
+    font-size: 2rem;
+}
+
+.span{
+    text-align: center;
+    background: #666666;
+    font-size: 5rem;
+    padding: .5rem .5rem;
+    border-radius: .5rem;
+}

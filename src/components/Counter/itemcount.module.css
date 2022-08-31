@@ -14,10 +14,11 @@
 
 .button{
     width: 30px;
-    height: 30px;
     margin: 15px;
+    font-size: 2rem;
 }
 .button2{
+    font-size: 1.3rem;
     position: relative;
     padding: 10px;
 }
