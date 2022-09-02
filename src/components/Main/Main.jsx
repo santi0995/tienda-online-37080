@@ -1,20 +1,21 @@
-import ItemDetailContainer from '../ItemDetailContainer/ItemDetailContainer';
-// import Button from '../Button/Button';
-import ItemListContainer from '../ItemListContainer/ItemListContainer';
-import React from 'react'
-import estilos from './main.module.css'
+import { Route, Routes } from "react-router-dom";
 
-const Main = () => {  
+import ItemDetailContainer from "../ItemDetailContainer/ItemDetailContainer";
+import ItemListContainer from "../ItemListContainer/ItemListContainer";
+import Landing from "./Landing";
+import React from "react";
 
+const Main = () => {
   return (
     <main>
-      <section>
-        <img className={estilos.banner} src='bannerP.jpg' alt=""/>
-        <ItemListContainer/>
-        <ItemDetailContainer/>
-      </section>
+      <Landing/>
+        <Routes>
+          <Route path="/" element={<ItemListContainer/>}/>
+          <Route path='/category/:id' element={<ItemListContainer/>}/>
+          <Route path="/item/:id" element={<ItemDetailContainer />}/>
+        </Routes>
     </main>
   );
 };
 
-export default Main
+export default Main;

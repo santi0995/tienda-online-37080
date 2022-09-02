@@ -1,12 +1,41 @@
+.home {
+    display: flex;
+    align-items: center;
+    }
 
-.title1{
-    font-size: 35px;
-    color: #00a200;
-    margin-left: 30px;
+.textContainer{
+    padding-top: 10rem;
+    padding-left: 4rem;
+    position: absolute;
 }
 
+.content{
+    margin-left: 6%;
+    display: inline-block;
+    max-width: 600px;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.parrafo{
+    max-width: 600px;
+    margin-left: 7%;
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    color: #eee;
+}
+
+.spanContent{
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+
 .banner{
-    width: 100%;
-    z-index: -1;
-    object-fit: fill;
+    max-height: 1000px;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
 }

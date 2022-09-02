@@ -1,21 +1,28 @@
-*{
+* {
+  font-family: 'Oswald', sans-serif;
   margin: 0;
   padding: 0;
-  font-family: 'Oswald', sans-serif;
-}
+  box-sizing: border-box;
+  transition: .2s linear;
+  }
+
+:root {
+    --main-color: #d3ad7f;
+    --black: #13131a;
+    --bg: #010103;
+    --border: .1rem solid rgba(255,255,255,.3);
+    }
 
 body{
   background-color: #000000;
 }
 
-.saludo{
-  color:#00ffff;
-  display: flex;
-  justify-content: flex-end;
-}
-
 .material-symbols-outlined{
   font-size: 40px;
   margin-right: 60px;
-  color: #000000;
+  color: #fff;
+}
+
+.active{
+  color: var(--main-color);
 }
