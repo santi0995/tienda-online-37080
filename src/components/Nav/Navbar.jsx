@@ -7,7 +7,7 @@ const Navbar = (props) => {
   if (props.isFooter === false) {
     return (
       <nav className={estilos.nav}>
-        <Link to="/"><img className={estilos.logo} src="Logoclimaservice.png" alt=""></img></Link>
+        <Link to="/"><img className={estilos.logo} src="./Logoclimaservice.png" alt=""></img></Link>
         <ul className={estilos.list}>
           <li>
             <Link to="/">Inicio</Link>

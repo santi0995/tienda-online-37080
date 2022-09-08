@@ -7,7 +7,6 @@ import { useParams } from "react-router-dom"
 const ItemDetailContainer = () => {
 
 
-    const onAdd = (param) => console.log(param); 
     const [item, setItem] = useState({});
     const {id} = useParams();
 
@@ -38,7 +37,7 @@ const ItemDetailContainer = () => {
 
     
     return (
-        <ItemDetail item={item} onAdd={onAdd}/>
+        <ItemDetail item={item}/>
     )
 }
 

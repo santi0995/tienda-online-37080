@@ -33,3 +33,8 @@
     text-transform: uppercase;
     font-size: 3rem;
 }
+.button{
+    font-size: 1.3rem;
+    position: relative;
+    padding: 10px;
+}
