@@ -28,7 +28,9 @@ const Navbar = (props) => {
             <a href="https:google.com">Contacto</a>
           </li>
         </ul>
+        <Link to='/cart'>
         <CartWidget/>
+        </Link>
       </nav>
     );
   } else {
