@@ -10,7 +10,7 @@ const CartDetail = ({prod}) => {
     return (
     <div>
         <h2 className={estilos.title}>{prod.title}</h2>
-        <button onClick={() => eliminarProd(prod.id)}>Eliminar producto</button>
+        <button className={estilos.button} onClick={() => eliminarProd(prod.id)}>Eliminar producto</button>
     </div>
     )
 }
