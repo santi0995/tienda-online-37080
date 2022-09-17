@@ -1,9 +1,14 @@
-import estilos from './itemcount.module.css'
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
-const ItemCount = ({stock, initial, onAdd}) => {
+import estilos from './itemcount.module.css'
+
+const ItemCount = ({stock, initial = 1, onAdd}) => {
 
     const [count, setCount] = useState(initial);
+
+    useEffect(()=>{
+        setCount(initial)
+    }, [initial])
 
     const sumar = () =>{
         if (count < stock) {

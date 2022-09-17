@@ -1,9 +1,9 @@
 import Navbar from "../Nav/Navbar";
 
-const Header = (props) => {
+const Header = () => {
     return(
         <header>
-            <Navbar isFooter={false}/>  
+            <Navbar isInHeader={true}/>  
         </header>
     )
 }

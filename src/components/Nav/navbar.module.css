@@ -13,7 +13,16 @@
     list-style: none;
     display: flex;
     justify-content: space-evenly;
-    font-size: 20px;    
+    font-size: 1.3rem;    
+}
+
+.listFooter{    
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.3rem;
+    margin: 1rem;    
 }
 
 a{

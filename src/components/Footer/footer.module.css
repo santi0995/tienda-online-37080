@@ -1,9 +1,13 @@
 .contenedorMain{
-    background-color: blue;
-    display: none;
+    background-color: var(--main-color);
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 
   h5{
     display: flex;
+    font-size: 1rem;
     justify-content: center;
   }

@@ -10,12 +10,14 @@ const ItemDetail = ({item}) => {
     
     
     const [cantidad, setCantidad] = useState(0)
-    const {addToCart} = useContext(CartContext);
+    const {addToCart, obtenerCantidadProducto} = useContext(CartContext);
     
     const onAdd = (cantidad) => {
         setCantidad(cantidad);
         addToCart(item, cantidad);
     };
+
+    const qty = obtenerCantidadProducto(item.id)
 
     return (
         <div>
@@ -27,10 +29,15 @@ const ItemDetail = ({item}) => {
                 <p className={estilos.span} >${item.price}</p>
                 <p className={estilos.descrip}>{item.descripcion}</p>
                 {cantidad === 0 ? 
-                <ItemCount stock={item.stock} initial={1} onAdd={onAdd}/>                   
-                : <Link to="/cart">
+                <ItemCount stock={item.stock} initial={qty} onAdd={onAdd}/>                   
+                :<div className={estilos.container}>
+                <Link to="/cart">
                     <button className={estilos.button}>Ir al carrito</button>
                     </Link>
+                 <Link to="/">
+                    <button className={estilos.button}>Seguir comprando</button>
+                    </Link>
+                </div> 
                 }
                 <p>Categoria: {item.category}</p>
                 <p>Stock Disponible: {item.stock} unidades</p>
