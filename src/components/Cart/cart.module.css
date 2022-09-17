@@ -50,6 +50,7 @@
 .list{
     display: flex;
     width: 500px;
+<<<<<<< HEAD
     margin: 0 auto;
     justify-content: space-evenly;
     font-size: 1.5rem;
@@ -104,4 +105,11 @@
     font-size: 1.5rem;
     padding: .5rem;
     margin-bottom: 3rem;
+=======
+    height: 600px;
+}
+
+.button{
+    width: 500px;
+>>>>>>> 271952cea1a65f257a922906e3375c2f43f5c5a9
 }
