@@ -14,7 +14,7 @@ const {totalUnidades} = useContext(CartContext)
       <span  className= "material-symbols-outlined">
   shopping_cart 
   </span>
-  <p>{totalUnidades() === 0 ? "" : totalUnidades()}</p>
+  <span>{totalUnidades() === 0 ? "" : totalUnidades()}</span>
     </div>
   )
 };

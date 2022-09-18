@@ -58,8 +58,6 @@ const CartProvider = ({children}) =>{
         return product?.cantidad
     }
 
-    console.log(cart);
-
     const clearCart = () =>{
         setCart([]);
     }
