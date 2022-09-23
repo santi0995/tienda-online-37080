@@ -17,11 +17,11 @@
 }
 
 .list{
-    display: flex;
-    width: 500px;
-    margin: 0 auto;
-    justify-content: space-evenly;
-    font-size: 1.5rem;
+  display: flex;
+  width: 500px;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
 }
 
 .link:hover{

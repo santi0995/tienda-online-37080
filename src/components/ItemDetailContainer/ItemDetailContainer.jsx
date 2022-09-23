@@ -4,7 +4,6 @@ import {collection, doc, getDoc} from 'firebase/firestore'
 import ItemDetail from "./ItemDetail";
 import {db} from '../../firebaseConfig';
 import estilos from "../ItemListContainer/item.module.css";
-// import { products } from "../../mock/products";
 import { useParams } from "react-router-dom";
 
 const ItemDetailContainer = () => {
@@ -29,7 +28,7 @@ const ItemDetailContainer = () => {
     <section>
       {
       isLoading ? (
-        <div class={estilos.loader}>Loading...</div>
+        <div className={estilos.loader}>Loading...</div>
       ) : <>
             <ItemDetail item={item} />
       </>

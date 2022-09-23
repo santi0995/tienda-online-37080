@@ -47,6 +47,24 @@
     font-size: 3rem;
 }
 
+.title2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+    height: 800px;
+    color: var(--main-color);
+    text-align: center;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.numeroId{
+    color: #fff;
+}
+
 .list{
     display: flex;
     width: 500px;

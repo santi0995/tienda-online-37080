@@ -1,23 +1,23 @@
 import React, { useEffect, useState } from "react";
-import {collection, getDocs, query, where} from 'firebase/firestore';
+import { collection, getDocs, query, where } from 'firebase/firestore';
 
 import ItemList from "./ItemList";
 import { NavLink } from "react-router-dom";
 import {db} from '../../firebaseConfig';
 import estilos from "./item.module.css";
-// import { products } from "../../mock/products";
 import { useParams } from "react-router-dom";
 
 const ItemListContainer = () => {
   const [items, setItems] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [categories, setCategories] = useState([])
 
   const { id } = useParams();
 
   useEffect(() => {
     const itemCollection = collection(db, "productos");
     const q = id ? query(itemCollection, where("category", "==", id)) : itemCollection
-
+    const categoryCollection = collection(db, "categorias");
     
      getDocs(q)
      .then((res) => {
@@ -33,30 +33,38 @@ const ItemListContainer = () => {
    .catch((error)=>{
      console.log(error);
    })
-  }, [id]);
+
+   getDocs(categoryCollection)
+   .then((res)=>{
+    const categorias =
+    res.docs.map((cat)=>{
+      return{
+        id: cat.id,
+        ...cat.data()
+      }
+    })
+    setCategories(categorias)
+   })
+  }, [id])
+  
+  ;
 
   return (
     <section>
+      <h3 className={estilos.title}>Productos</h3>
       {
         isLoading ? (
           <div className={estilos.loader}>Loading...</div>
-        ) : <>
-        <h3 className={estilos.title}>Productos</h3>
-      <div className={estilos.list}>
-        <NavLink className={estilos.link} to="/">
-          Todos
-        </NavLink>
-        <NavLink className={estilos.link} to="/category/Techo">
-          Techo
-        </NavLink>
-        <NavLink className={estilos.link} to="/category/Suelo-Techo">
-          Suelo - Techo
-        </NavLink>
-        <NavLink className={estilos.link} to="/category/Portatil">
-          Portatil
-        </NavLink>
-      </div>
-      <ItemList items={items} />
+          ) : 
+          <>
+          {
+            categories.map((cat)=>(
+              <div className={estilos.list}>
+                <NavLink className={estilos.link} to={`${cat.route}`}>{cat.name}</NavLink>
+              </div>
+            ))
+          }
+         <ItemList items={items} />
         </>
       }
     </section>
@@ -84,3 +92,21 @@ export default ItemListContainer;
 // return () =>{
 // setisLoading(true);
 //}
+
+
+// <h3 className={estilos.title}>Productos</h3>
+//       <div className={estilos.list}>
+//         <NavLink className={estilos.link} to="/">
+//           Todos
+//         </NavLink>
+//         <NavLink className={estilos.link} to="/category/Techo">
+//           Techo
+//         </NavLink>
+//         <NavLink className={estilos.link} to="/category/Suelo-Techo">
+//           Suelo - Techo
+//         </NavLink>
+//         <NavLink className={estilos.link} to="/category/Portatil">
+//           Portatil
+//         </NavLink>
+//       </div>
+//       <ItemList items={items} />
