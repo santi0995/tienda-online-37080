@@ -7,8 +7,6 @@ export const CartWidget = () => {
 
 const {totalUnidades} = useContext(CartContext)
 
-
-
   return (
     <div className={estilos.container}>      
       <span  className= "material-symbols-outlined">

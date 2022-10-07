@@ -4,7 +4,8 @@
     justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.3);
     position: fixed;
-    padding: 3rem 2%;
+    padding: 2rem 2%;
+    z-index: 1;
 }
 
 .list{    
@@ -16,10 +17,28 @@
     font-size: 1.3rem;    
 }
 
+
+h5{
+    display: flex;
+    font-size: 1.2rem;
+    justify-content: center;
+}
+
+.contenedorMain{
+    background-color: #dca45f;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+
 .listFooter{    
     width: 100%;
     list-style: none;
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
     font-size: 1.3rem;
     margin: 1rem;    
@@ -30,9 +49,113 @@ a{
     color: #fff;
 }
 
+.footerh5{
+    width: 250px;
+    margin: 0 auto;
+}
+
 
 .logo{
     position: absolute;
     width: 180px;
     margin: 0px 50px;
+}
+
+.share{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.share img{
+    width: 40px;
+}
+
+.share li{
+    list-style: none;
+}
+
+.share li a {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    box-shadow: -20px 20px 10px rgb(0 0 0 / 50%);
+    transform: perspective(1000px) rotate(-30deg) skew(25deg);
+}
+
+.share li a::before{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    height: 100%;
+    width: 20px;
+    background: #b2b2b2;
+    transition: 0.5s;
+    transform: rotate(0deg) skewY(-45deg);
+}
+
+.share li a::after{
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: -10px;
+    height: 20px;
+    width: 100%;
+    background: #e5e5e5;
+    transition: 0.5s;
+    transform: rotate(0deg) skewX(-45deg);
+}
+
+
+.share li a:hover {
+    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+    box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
+}
+
+.share li:hover .fa {
+    color: #fff;
+}
+
+.share li:hover:nth-child(1) a {
+    background-color: #3b5999;
+}
+
+.share li:hover:nth-child(1) a::before {
+    background-color: #2f477a;
+}
+
+.share li:hover:nth-child(1) a::after {
+    background-color: #4e69a3;
+}
+
+.share li:hover:nth-child(2) a {
+    background-color: #159515;
+}
+
+.share li:hover:nth-child(2) a::before {
+    background-color: #159515;
+}
+
+.share li:hover:nth-child(2) a::after {
+    background-color: #159515;
+}
+
+.share li:hover:nth-child(3) a {
+    background-color: #2fff66;
+}
+
+.share li:hover:nth-child(3) a::before {
+    background-color: #2fff66;
+}
+.share li:hover:nth-child(3) a::after {
+    background-color: #2fff66;
 }

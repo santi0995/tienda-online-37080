@@ -20,19 +20,10 @@ const Navbar = ({isInHeader}) => {
               <Link to="/">Inicio</Link>
             </li>
             <li>
-              <a href="https:google.com">Sobre Nosotros</a>
+              <Link to="/about">Sobre nosotros</Link>
             </li>
             <li>
-              <a href="https:google.com">Servicios</a>
-            </li>
-            <li>
-              <a href="https:google.com">Productos</a>
-            </li>
-            <li>
-              <a href="https:google.com">Reviews</a>
-            </li>
-            <li>
-              <a href="https:google.com">Contacto</a>
+              <Link to="/form">Contacto</Link>
             </li>
           </ul>
           <Link to="/cart">
@@ -40,18 +31,38 @@ const Navbar = ({isInHeader}) => {
           </Link>
         </nav>
       ) : (
-        <nav>
+        <nav className={estilos.contenedorMain}>
             <ul className={estilos.listFooter}>
             <li>
               <Link to="/">Inicio</Link>
             </li>
-              <li>
-                <a href="https:google.com">Sobre Nosotros</a>
+            <li>
+              <Link to="/about">Sobre nosotros</Link>
+            </li>
+            <li>
+              <Link to="/form">Contacto</Link>
+            </li>
+            <ul className={estilos.share}>
+              <li>                
+            <a href="https://www.facebook.com/lomas1979">
+                <img src="../img/logo-facebook.png" alt="logoFacebook"/>
+            </a>
               </li>
               <li>
-                <a href="https:google.com">Contacto</a>
+            <a href="https://api.whatsapp.com/send?phone=%2B34698549221&fbclid=IwAR2YigwsiC0xRFXvz1XLRx4CcvRUB2--X2PNfAjL6yA8oaU9UgMH475AVwI">
+                <img src="../img/whatssap-logo.png" alt="logoWallapop"/>
+            </a>
               </li>
+              <li>                
+            <a href="https://www.milanuncios.com/tienda/climafind-s-l-3148.htm">
+                <img src="../img/malogo.png" alt="logoMilAnuncios"/>
+            </a>
+              </li>
+        </ul>
             </ul>
+            <div className={estilos.footerh5}>
+            <h5>Diseñado por Santiago Serrato</h5>
+            </div>
         </nav>
       )}
     </>

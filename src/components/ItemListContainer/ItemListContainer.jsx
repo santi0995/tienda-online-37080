@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { collection, getDocs, query, where } from 'firebase/firestore';
 
 import ItemList from "./ItemList";
+import Landing from "../Main/Landing";
 import { NavLink } from "react-router-dom";
 import {db} from '../../firebaseConfig';
 import estilos from "./item.module.css";
@@ -50,22 +51,23 @@ const ItemListContainer = () => {
   ;
 
   return (
-    <section>
+    <section className={estilos.content}>
+      <Landing/>
       <h3 className={estilos.title}>Productos</h3>
       {
         isLoading ? (
           <div className={estilos.loader}>Loading...</div>
           ) : 
-          <>
+          <section className={estilos.list}>
+              <nav className={estilos.nav}>
           {
             categories.map((cat)=>(
-              <div className={estilos.list}>
-                <NavLink className={estilos.link} to={`${cat.route}`}>{cat.name}</NavLink>
-              </div>
-            ))
-          }
+                    <NavLink className={estilos.link} to={`${cat.route}`}>{cat.name}</NavLink>     
+                    ))
+                  }
+            </nav>
          <ItemList items={items} />
-        </>
+        </section>
       }
     </section>
   );
@@ -73,40 +75,3 @@ const ItemListContainer = () => {
 
 export default ItemListContainer;
 
-
-
-// const getProducts = new Promise((res, rej) => {
-//   const prodFiltrados = products.filter((prod) => prod.category === id);
-//   setTimeout(() => res(id ? prodFiltrados : products), 500);
-// });
-
-// getProducts
-//   .then((products) => {
-//     setItems(products);
-//     setisLoading(false);
-//   })
-//   .catch((error) => {
-//     console.error(error);
-//   });
-
-// return () =>{
-// setisLoading(true);
-//}
-
-
-// <h3 className={estilos.title}>Productos</h3>
-//       <div className={estilos.list}>
-//         <NavLink className={estilos.link} to="/">
-//           Todos
-//         </NavLink>
-//         <NavLink className={estilos.link} to="/category/Techo">
-//           Techo
-//         </NavLink>
-//         <NavLink className={estilos.link} to="/category/Suelo-Techo">
-//           Suelo - Techo
-//         </NavLink>
-//         <NavLink className={estilos.link} to="/category/Portatil">
-//           Portatil
-//         </NavLink>
-//       </div>
-//       <ItemList items={items} />

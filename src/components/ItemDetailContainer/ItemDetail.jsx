@@ -20,7 +20,7 @@ const ItemDetail = ({item}) => {
     const qty = obtenerCantidadProducto(item.id)
 
     return (
-        <div>
+        <div className={estilos.sectionContainer}>
             <h2 className={estilos.title}>Detalle del producto</h2>
             <div className={estilos.card}>
             <p>{item.title}</p>
@@ -39,8 +39,8 @@ const ItemDetail = ({item}) => {
                     </Link>
                 </div> 
                 }
-                <p>Categoria: {item.category}</p>
-                <p>Stock Disponible: {item.stock} unidades</p>
+                <p className={estilos.text2}>Categoria: {item.category}</p>
+                <p className={estilos.text2}>Stock Disponible: {item.stock} unidades</p>
             </div>
         </div>
         </div>

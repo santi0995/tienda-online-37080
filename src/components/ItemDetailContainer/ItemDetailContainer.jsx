@@ -43,26 +43,6 @@ export default ItemDetailContainer;
 
 
 
-// const getItem = new Promise((res, rej) => {
-//   const item1 = products.find((producto) => producto.id === idProdNum);
-
-//   setTimeout(() => res(item1), 500);
-// });
-
-// getItem
-//   .then((products) => {
-//     setItem(products);
-//     setisLoading(false);
-//   })
-//   .catch((error) => {
-//     console.error(error);
-//   })
-//   return () =>{
-//     setisLoading(true);
-// }
-
-
-
 
 
 

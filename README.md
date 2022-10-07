@@ -1,70 +1,141 @@
-# Getting Started with Create React App
+<!-- LOGO DEL PROYECTO -->
+<br />
+<div align="center">
+  <a href="#">
+    <img src="public/img/logo.png" alt="Logo" width="180" height="180">
+  </a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <h3 align="center">E-commerce</h3>
 
-## Available Scripts
+  <p align="center">
+    Tienda online de aires acondicionados 
+    <br />
+    <a href="https://github.com/santi0995/tienda-online-37080"><strong>Explora el código aquí»</strong></a>
+  </p>
+</div>
 
-In the project directory, you can run:
+## Librerias y recursos usados 
+- [React](https://facebook.github.io/react/)
+- [React-router-dom v-6](#)
+- [JavaScripp(ES6)](https://facebook.github.io/react/)
+- [Firebase](https://firebase.google.com/)
+- [Firestore](https://firebase.google.com/docs/firestore)
+- [Webpack](https://webpack.js.org/)
+- [Node.js](#)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Instalación
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Aquí encontrarás una serie de instrucciones para instalar el proyecto:
 
-### `npm test`
+1. Clonar el repositorio
+   ```sh
+   git clone https://github.com/santi0995/tienda-online-37080.git
+   ```
+2. Instalar paquetes NPM 
+   ```sh
+   npm install
+   ```
+   
+3. Iniciar el proyecto
+    ```sh
+   npm start
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   <!-- CONTRIBUCIONES -->
+## Contribuyendo
 
-### `npm run build`
+Las contribuciones son lo que hacen a la comunidad de codigo abierto un gran sitio para aprender, inspirarse y crear. Cualquier contribución será **gratamente apreciada**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Si tienes alguna sugerencia que haría este proyecto mejor, usa el fork y crea un pull request.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Fork en el Proyecto
+2. Crea tu propia Branch(`git checkout -b feature/Contribucion`)
+3. Haz Commit en tus cambios(`git commit -m 'Añade tu contribucion'`)
+4. haz Push en el Branch (`git push origin feature/Contribucion`)
+5. Abre una Pull Request
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ 
+ <!-- ACERCA DEL PROYECTO -->
+## Caracteristicas
+Este proyecto está construido para servir como tienda online en comercialización de aires acondicionados. Está conectado a la base de datos de Firebase y cuenta con formularios para pedidos y consultas. 
 
-### `npm run eject`
+## Contacto
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Santiago Serrato - [Linkedin](https://www.linkedin.com/feed/)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Link del proyecto: [https://github.com/santi0995/tienda-online-37080](https://github.com/santi0995/tienda-online-37080
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<br />
+<br />
+<!--README EN INGLES -->
+<br />
+<br />
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="#">
+    <img src="public/img/logo.png" alt="Logo" width="180" height="180">
+  </a>
 
-## Learn More
+  <h3 align="center">E-commerce</h3>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  <p align="center">
+    Online store of air conditioners 
+    <br />
+    <a href="https://github.com/santi0995/tienda-online-37080"><strong>Explore the code here »</strong></a>
+  </p>
+</div>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Libraries and resources used 
+- [React](https://facebook.github.io/react/)
+- [React-router-dom v-6](#)
+- [JavaScripp(ES6)](https://facebook.github.io/react/)
+- [Firebase](https://firebase.google.com/)
+- [Firestore](https://firebase.google.com/docs/firestore)
+- [Webpack](https://webpack.js.org/)
+- [Node.js](#)
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Installation
 
-### Analyzing the Bundle Size
+Here you will find a series of instructions to install the project:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Clone the repository
+    ```sh
+    git clone https://github.com/santi0995/shop-online-37080.git
+    ```
+2. Install NPM packages
+    ```sh
+    npm install
+    ```
+   
+3. Start the project
+     ```sh
+    npm start
+    ```
 
-### Making a Progressive Web App
+   <!-- CONTRIBUTING -->
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Contributions are what make the open source community a great place to learn, get inspired, and create. Any contribution will be **greatly appreciated**
 
-### Advanced Configuration
+If you have any suggestions that would make this project better, use the fork and create a pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. Fork in the Project
+2. Create your own Branch(`git checkout -b feature/Contribution`)
+3. Commit your changes(`git commit -m 'Add your contribution'`)
+4. Push the Branch (`git push origin feature/Contribution`)
+5. Open a Pull Request
 
-### Deployment
+ 
+  <!-- ABOUT THE PROJECT -->
+## Features
+This project is built to serve as an online store for the sale of air conditioners. It is connected to the Firebase database and has forms for orders and inquiries.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Contact
 
-### `npm run build` fails to minify
+Santiago Serrato - [Linkedin](https://www.linkedin.com/feed/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Project link: [https://github.com/santi0995/tienda-online-37080](https://github.com/santi0995/tienda-online-37080

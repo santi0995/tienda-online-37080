@@ -1,3 +1,7 @@
+.sectionContainer{
+    padding: 9rem 0 0 0;
+}
+
 .title{
     color: var(--main-color);
     font-size: 2rem;
@@ -23,6 +27,7 @@
 .carrito{
     display: flex;
     margin: 0 auto;
+    height: 300px;
     transform: rotateZ(10deg);
 }
 
@@ -30,13 +35,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 5rem;
+    margin: 5rem 0 5rem 0;
 }
 
 .vacio{
     color: var(--main-color);
-    padding: 3rem;
-    font-size: 3rem;
+    padding: 3rem 0 0 1rem;
+    font-size: 2.5rem;
 }
 
 .title1{
@@ -44,7 +49,7 @@
     text-align: center;
     padding: 1rem;
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .title2{
@@ -107,19 +112,25 @@
     border-radius: .5rem;
 }
 
-.button{
-    font-size: 1.5rem;
-    padding: .5rem;
-}
-
 .button1{
-    margin: 1rem 0 0rem 0;
-    font-size: 1.5rem;
-    padding: .5rem;
+    width: 300px;
 }
 
-.button2{
+.button, .button1, .button2{
+    padding: 1rem;
+    font-weight: 400;
+    background-color: var(--main-color);
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
     font-size: 1.5rem;
-    padding: .5rem;
-    margin-bottom: 3rem;
-}
+    transition: all .3s ease-in;
+    color: #fff;
+    margin: 1rem 0 0;
+  }
+  
+  .button:hover, .button1:hover, .button2:hover{
+    background-color: #000;
+    border: 1px solid white;
+  }

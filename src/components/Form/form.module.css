@@ -1,20 +1,30 @@
 .form{
     height: 550px;
-    display: flex;
-    align-items: center;
-}
-
-.form1{
+    padding: 9rem 0 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    margin-bottom: 22rem;
+    text-transform: uppercase;
+}
+
+.form1{
     width: 50%;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    transition: all .5s ease-out;
+}
+
+.head{
+    color: var(--main-color);
+    font-size: 1.5rem;
+    margin: 3rem 0;
 }
 
 .text{
-    width: 90%;
-    font-size: 2rem;
+    width: 60%;
+    font-size: 1.5rem;
     margin: 20px auto;
     padding: 4px;
     background: none;
@@ -24,7 +34,106 @@
     border-bottom: 1px solid #ccc;
 }
 
+.title2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        margin: 0 auto;
+        height: 800px;
+        color: var(--main-color);
+        text-align: center;
+        padding: 1rem;
+        text-transform: uppercase;
+        font-size: 3rem;
+    }
+    
+    .numeroId{
+        color: #fff;
+    }
+
+
 .button{
-    font-size: 2rem;
-    padding: 5px;
+    width: 50%;
+    padding: 1rem;
+    font-weight: 400;
+    background-color: var(--main-color);
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: all .2s ease-in;
+    color: #fff;
+    margin: 1rem auto;
+}
+  
+.button:hover{
+    background-color: #000;
+    border: 0px solid white;
+}
+
+.contact {
+    padding: 6rem 12rem 4rem 12rem;
+}
+
+.heading {
+        text-align: center;
+        color: #fff;
+        padding: 1rem;
+        text-transform: uppercase;
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+        font-size: 2.5rem;
+}
+
+.heading span {
+        color: var(--main-color);
+        text-transform: uppercase;
+}
+
+.contact .row {
+        display: flex;
+        background: var(--black);
+        flex-wrap: wrap;
+        gap: 1rem;
+}
+
+.contact .row .map {
+        flex: 1 1 45rem;
+        object-fit: cover;
+}
+
+.contact .row form h3 {
+        text-transform: uppercase;
+        font-size: 3rem;
+        color: #fff;
+}
+
+.contact .row form {
+        flex: 1 1 45rem;
+        padding: 5rem 2rem;
+        text-align: center;
+}
+
+.contact .row form .inputBox {
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        background: var(--bg);
+        border: var(--border);
+        outline: none;
+        border: none;
+}
+
+.contact .row form .inputBox input, textarea {
+        width: 100%;
+        padding: 1.5rem;
+        font-size: 1.5rem;
+        text-transform: none;
+        background: none;
+        color: #fff;
+        outline: none;
+        border: none;
 }
