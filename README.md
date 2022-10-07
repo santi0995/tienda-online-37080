@@ -13,6 +13,11 @@
     <a href="https://github.com/santi0995/tienda-online-37080"><strong>Explora el código aquí»</strong></a>
   </p>
 </div>
+<br />
+<div align="center">
+    <img src="public/tiendagif.gif" alt="Logo" width="" height="">
+</div>
+<br />
 
 ## Librerias y recursos usados 
 - [React](https://facebook.github.io/react/)
@@ -87,6 +92,11 @@ Link del proyecto: [https://github.com/santi0995/tienda-online-37080](https://gi
     <a href="https://github.com/santi0995/tienda-online-37080"><strong>Explore the code here »</strong></a>
   </p>
 </div>
+<br />
+<div align="center">
+    <img src="public/tiendagif.gif" alt="Logo" width="" height="">
+</div>
+<br />
 
 ## Libraries and resources used 
 - [React](https://facebook.github.io/react/)
